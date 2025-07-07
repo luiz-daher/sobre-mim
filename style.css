@@ -103,7 +103,7 @@ footer {
 body.fundo-estudo {
   background-color: #1a6078;
   position: relative;
-  overflow: hidden;
+  min-height: 100vh;
 }
 
 /* Camada da imagem de fundo com leve transparência */
