@@ -1,0 +1,223 @@
+/* Reset básico de margens e espaçamentos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização do corpo */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #1a6078;
+  color: #ffffff;
+  padding: 20px;
+}
+
+/* Cabeçalho fixo em todas as páginas, e navegação */
+header {
+  background-color: #f33333;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo principal, limita o conteúdo ao centro da página */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Estilo da seção de perfil */
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaço entre imagem e texto */
+  margin-bottom: 40px auto;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Estilo da foto de perfil */
+.foto-perfil {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #f33333;
+}
+
+.texto-sobre {
+    flex: 1;
+    max-width: 600px;
+}
+
+/* Estilo da seção de formação */
+.formacao {
+  background-color: #145063;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.formacao h2 {
+  margin-top: 20px;
+  color: #f33333;
+}
+
+.formacao ul {
+  margin-left: 20px;
+  list-style: square;
+}
+
+/* Imagem de fundo */
+body.fundo-estudo {
+  background-color: #1a6078;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Camada da imagem de fundo com leve transparência */
+body.fundo-estudo::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("imagens/Estudo.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Estilo da página de portfólio */
+.portfolio {
+  max-width: 900px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projeto {
+  background-color: #145063;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.projeto h2 {
+  margin-bottom: 10px;
+  color: #f33333;
+}
+
+.projeto a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  background-color: #f33333;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.projeto a:hover {
+  background-color: #d02020;
+}
+
+/* Imagem de fundo */
+body.fundo-trabalho {
+  background-color: #1a6078;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Camada da imagem de fundo com leve transparência */
+body.fundo-trabalho::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("imagens/trabalho.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Estilo do formulário visual de contato */
+.form-contato {
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #145063;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.form-contato label {
+  font-weight: bold;
+  color: white;
+}
+
+.form-contato input,
+.form-contato textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  background-color: #f4f4f4;
+}
+
+.form-contato button {
+  padding: 10px;
+  background-color: #f33333;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-contato button:hover {
+  background-color: #d02020;
+}
